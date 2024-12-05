@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Capture Game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body class="gallery-page">
+    <header>
+        <h1>Pokémon Capture Game</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> | 
+        <a href="page2.html">Pokémon Gallery</a> | 
+        <a href="page3.html">Pokémon Capture Game</a>
+    </nav>
+
+    <main>
+        <section id="gameSection">
+            <h2>Catch the Pokémon!</h2>
+            <p>Click on the moving Pokémon to capture them and earn points!</p>
+            <a href="javascript:;" id="startButton">startButton</a>
+            <div id="gameCanvas"></div> <!-- 捕捉游戏的画布区域 -->
+            <p style="display: none;">Score: <span id="score">0</span></p> <!-- 实时显示得分 -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Pokémon Capture Game</p>
+    </footer>
+
+    <script src="./js/p5.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
